@@ -1,0 +1,5 @@
+#summary BlitzMax language binding of the Chipmunk Game Dynamics library.
+
+= Introduction =
+
+[http://wiki.slembcke.net/main/published/Chipmunk Chipmunk] is a fast 2D Game Dynamics engine.
