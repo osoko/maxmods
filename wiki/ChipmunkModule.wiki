@@ -4,4 +4,4 @@
 
 [http://wiki.slembcke.net/main/published/Chipmunk Chipmunk] is a fast 2D Game Dynamics engine.
 
-To compile this module, you need to use a custom version of BMK. See [http://code.google.com/p/wxmax/wiki/WhatToDoWithBmk WhatToDoWithBmk] for more details.
+*NOTE* : To compile this module, you need to use a custom version of BMK. See [http://code.google.com/p/wxmax/wiki/WhatToDoWithBmk WhatToDoWithBmk] for more details.
