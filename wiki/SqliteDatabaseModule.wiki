@@ -1,0 +1,13 @@
+#summary SQLite database driver.
+
+= Introduction =
+
+Allows you to work with SQLite databases.
+
+SQLite itself is compiled into the module for your convenience.
+
+The current module uses the "amalgamation" version of SQLite, which provides up to 10% more efficiency in places.
+
+= Requirements =
+
+  * The DatabaseModule
