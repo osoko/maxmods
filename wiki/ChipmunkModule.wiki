@@ -2,6 +2,10 @@
 
 = Introduction =
 
-[http://wiki.slembcke.net/main/published/Chipmunk Chipmunk] is a fast 2D Game Dynamics engine.
+[http://wiki.slembcke.net/main/published/Chipmunk Chipmunk] is a fast cross-platform 2D Game Dynamics engine.
+
+Version 1.02 adds a buoyancy demo, implementing one of the new body callback functions.
+
+You can follow the module progress via the ChipmunkModuleChangeLog.
 
 *NOTE* : To compile this module, you need to use a custom version of BMK. See [http://code.google.com/p/wxmax/wiki/WhatToDoWithBmk WhatToDoWithBmk] for more details.
