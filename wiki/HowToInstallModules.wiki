@@ -21,6 +21,4 @@ Thus, the path to the module *BaH.Chipmunk*, would actually look like this : `Bl
 Building modules on Windows will require the installation of MinGW. (You can find out more about installing MinGW for BlitzMax [http://blitzmax.com/Community/posts.php?topic=72892 here].)
 For Linux and MacOS X you will need the appropriate developer tools installed.
 
-Some of Brucey's modules also require a _tweaked_ version of the BlitzMax make app BMK. See [http://code.google.com/p/wxmax/wiki/WhatToDoWithBmk WhatToDoWithBmk] for more details.
-
 Otherwise, you build modules simply by choosing the Build Modules option from the IDE.
