@@ -6,7 +6,7 @@ The RegEx module uses [http://www.pcre.org PCRE] to provide integrated support f
 
 Regular expressions allow you to define a pattern for use with Find/Replace, rather than a normal matching string. This makes it infinitely more powerful for complicated matching.
 
-And example.
+==Example==
 
 Replace all numbers occurring in the following text with the string "!FLOAT!"
 
