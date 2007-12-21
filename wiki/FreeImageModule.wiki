@@ -2,6 +2,8 @@
 
 = Introduction =
 
+[http://freeimage.sourceforge.net FreeImage] with BlitzMax.
+
 With this module you can load : GIF, BMP, DDS, EXR, HDR, ICO, IFF, JNG, JPG, JPEG-2000, KOALA, LBM, Kodak, MNG, PCS, PBM, PGM, PNG, PPM, Photoshop (PSD), Fax G3, SGI, RAS, TARGA, TIFF, WBMP, XBM and XPM.
 
 And save : BMP, EXR, GIF, HDR, ICO, JPEG, JPEG-2000, PBM, PGM, PNG, PPM, TARGA, TIFF, WBMP and XPM.
