@@ -1,7 +1,7 @@
 #summary Change History for BaH.FreeImage
 
 || *Version* || *Date* || *Comments* ||
-|| 1.03 || ..soon.. || Updated to FreeImage 3.10.0. Adds OpenEXR and OpenJPG(2000) formats. ||
+|| 1.03 || 22 Dec 2007 || Updated to FreeImage 3.10.0. Adds OpenEXR and OpenJPG(2000) formats. ||
 || || || Win32 now compiles as a module, rather than using a DLL :-) ||
 || || || Fixed colour problems when saving an image. ||
 || || || Fixed seek->end not seeking from the end. ||
