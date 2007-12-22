@@ -1,0 +1,20 @@
+#summary Change History for BaH.FreeImage
+
+|| *Version* || *Date* || *Comments* ||
+|| 1.03 || ..soon.. || Updated to FreeImage 3.10.0. Adds OpenEXR and OpenJPG(2000) formats. ||
+|| || || Win32 now compiles as a module, rather than using a DLL :-) ||
+|| || || Fixed colour problems when saving an image. ||
+|| || || Fixed seek->end not seeking from the end. ||
+|| || || Fixed multi-image bug where filename wasn't kept long enough. ||
+|| || || Fixed TIFF save issue. (A freeimage bug, most likely) ||
+|| || || Fixed win32 TIFF load issue. (Another freeimage bug, most likely) ||
+|| 1.02 || 21 Aug 2007 || Hacked MNG plugin to validate images using the .mng header. ||
+|| || || Re-applied internal LibPNG support. Do not Import Pub.Libpng ||
+|| || || Loaded TFreeImages bitmaps are now not y-flipped at load-time. Therefore when saving they should now be in the correct orientation. ||
+|| || || New `TMultiFreeImage` type for multi-page image support (gif, ico and tiff). ||
+|| || || New `LoadAnimFreeImage()` function to create a multi-frame TImage from a multi-page image. ||
+|| 1.01 || n/a || Added `CreateFromPixmap()` function. ||
+|| || || Added colorQuantize, dither, threshold, toneMapping, tmoDrago03 and tmoReinhard05 methods. ||
+|| || || Added convertTo 4, 8, 16 methods. ||
+|| || || Added more documentation. ||
+|| 1.00 || n/a || Initial Release. (FreeImage 3.9.3). ||
