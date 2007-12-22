@@ -11,3 +11,6 @@ And save : BMP, EXR, GIF, HDR, ICO, JPEG, JPEG-2000, PBM, PGM, PNG, PPM, TARGA, 
 As well as apply a range of image manipulation on the images.
 
 Images can be loaded using the standard `LoadPixmap()` function, or for advanced use, with `LoadFreeImage()`.
+
+
+You can follow the module progress via the FreeImageModuleChangeLog.
