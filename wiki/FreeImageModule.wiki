@@ -2,7 +2,7 @@
 
 = Introduction =
 
-[http://freeimage.sourceforge.net FreeImage] with BlitzMax.
+A BlitzMax wrapper for FreeImage.
 
 With this module you can load : GIF, BMP, DDS, EXR, HDR, ICO, IFF, JNG, JPG, JPEG-2000, KOALA, LBM, Kodak, MNG, PCS, PBM, PGM, PNG, PPM, Photoshop (PSD), Fax G3, SGI, RAS, TARGA, TIFF, WBMP, XBM and XPM.
 
@@ -10,4 +10,4 @@ And save : BMP, EXR, GIF, HDR, ICO, JPEG, JPEG-2000, PBM, PGM, PNG, PPM, TARGA, 
 
 As well as apply a range of image manipulation on the images.
 
-Images can be loaded using the standard LoadPixmap() function, or for advanced use, with LoadFreeImage().
+Images can be loaded using the standard `LoadPixmap()` function, or for advanced use, with `LoadFreeImage()`.
