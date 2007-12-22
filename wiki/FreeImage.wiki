@@ -1,0 +1,9 @@
+#summary A Cross-platform imaging library.
+
+= About =
+
+FreeImage is an Open Source library project for developers who would like to support popular graphics image formats like PNG, BMP, JPEG, TIFF and others as needed by today's multimedia applications. FreeImage is easy to use, fast, multithreading safe, compatible with all 32-bit versions of Windows, and cross-platform (works both with Linux and Mac OS X)..
+
+Links
+  * [http://freeimage.sourceforge.net/index.html Home Page]
+  * [http://freeimage.sourceforge.net/features.html List of Features]
