@@ -89,6 +89,18 @@ Process complete
 Much better!
 The test passes, and we can now sleep well at night.
 
+==Asserting the Truth==
+Max Unit provides a suite of methods which you use to confirm that a value is actually what you expected it to be. These are called assertions.
+
+A basic assertion is one of truthfulness - `assertTrue(bool:Int, message:String = Null)` - which you pass in a value that you expect to be True, with an optional message that will be output if the assertion fails.
+
+You might also test for equality - `assertEqualsI(expected:Int, actual:Int, message:String = Null)` - where two Ints are compared, with the test failing if they are not equal.
+
+There are "Equals" tests for all standard BlitzMax types (note the suffix "I" for Int on the above example), as well as a general one for Objects (`assertEquals(expected:Object, actual:Object, message:String = Null)`), which will attempt to use the Object's Compare() method to decide if two Objects match.
+
+You can even explicitly `fail(message:String)` a test yourself, if need be.
+
+This flexibility allows you to choose what to test for and when.
 ==How It Works==
 Max Unit uses BlitzMax's new Reflection framework to make writing your tests easier. This allows us to concentrate writing tests than the code that runs them.
 
