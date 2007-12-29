@@ -38,7 +38,7 @@ Type ControllerTest Extends TTest
 
 	Field controller:TMyController
 
-	Method setup() { setup }
+	Method setup() { before }
 		controller = New TMyController
 	End Method
 
@@ -106,10 +106,10 @@ Max Unit uses BlitzMax's new Reflection framework to make writing your tests eas
 
 The key steps to building a test are
   * extend your test Type from TTest - Max Unit will automatically run tests for all Types that extend TTest.
-  * tag your methods with {setup}, {teardown}, or {test} - These are metadata tags that tell Max Unit what a particular method does. You can have one setup, one teardown, and as many test methods as you like.
+  * tag your methods with {before}, {after}, or {test} - These are metadata tags that tell Max Unit what a particular method does. You can have one before, one after, and as many test methods as you like.
   * run the TTestSuite, and wait for the results.
 
-A setup method is run *before* each test method. A teardown method is run *after* each test method. These are optional. You can use them for setting up and clearing any data that you use during your test.
+A before method is run *before* each test method. An after method is run *after* each test method. These are optional. You can use them for setting up and clearing any data that you use during your test.
 
 A tag is a set of curly brackets with some text between them, after your Method definition. Like this :
 {{{
