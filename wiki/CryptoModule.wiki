@@ -1,0 +1,32 @@
+#summary Encryption support with SSL
+
+= Introduction =
+
+Do you need to encrypt data in BlitzMax? Then perhaps this is the module for you.
+
+Utilising OpenSSL's crypto libraries, we gain support for BlowFish, CAST, DES, RC2, RC4 and RC5 encryption/decryption, with a simple API that anyone should be able to master in no time.
+
+===Example===
+This short example demonstrates encrypting a set of bytes with the BlowFish algorithm in the Cipher-block chaining mode.
+{{{
+Local ctx:EVP_CIPHER_CTX = New EVP_CIPHER_CTX.Create()
+
+ctx.EncryptInit(EVP_CIPHER.bf_cbc(), Null, key, iv)
+
+If Not ctx.EncryptUpdate(outbuf, outlen, inbuf, inlen) Then
+
+	Print "Error..."
+	End
+	
+End If
+
+If Not ctx.EncryptFinal(Varptr(outbuf)[outlen], tmplen) Then
+	Print "Error..."
+	End
+End If
+outlen :+ tmplen
+
+ctx.Cleanup()
+}}}
+
+Check out the examples provided with the module for more detail.
