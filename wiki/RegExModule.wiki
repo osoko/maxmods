@@ -22,3 +22,5 @@ Local s:String = regex.ReplaceAll(originalString, "!FLOAT!")
 which will result in the string
 
 `floats are !FLOAT!, !FLOAT!, !FLOAT! and even !FLOAT! If it wasn't enough !FLOAT! out of !FLOAT! applications said their users preferred them. That's !FLOAT! !`
+
+You can follow the module progress via the RegExModuleChangeLog.
