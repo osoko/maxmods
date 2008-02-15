@@ -10,6 +10,6 @@ Graphs can either be rendered from _dot_ files/text or be created on-the-fly usi
 
 == Requirements ==
 
-BaH.Graphviz requires the BaH.Expat module for support of complex HTML-based node text rendering support.
+BaH.Graphviz requires the *BaH.Expat* module for support of complex HTML-based node text rendering support.
 
-Applications will also require a specific renderer to be Imported. Currently available is BaH.GraphvizMax2D, a Max2D-based renderer.
+Applications will also require a specific renderer to be Imported. Currently available is *BaH.GraphvizMax2D*, a Max2D-based renderer.
