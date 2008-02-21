@@ -1,0 +1,16 @@
+#summary A Multi-protocol File Transfer library
+#labels libcurl
+
+= Introduction =
+
+The libcurl module adds enhanced support for the protocols *FTP*, *HTTP*, *TFTP*, *TELNET*, *DICT*, and *FILE*.
+
+libcurl also supports *HTTP POST*, *HTTP PUT*, FTP uploading, HTTP form based upload, proxies, cookies, user+password authentication, file transfer resume, http proxy tunneling and more!
+
+The Blitzmax libcurl module also includes *c-ares*, a library that performs DNS requests and name resolves asynchronously.
+
+As usual, this module is fully cross-platform with extensive documentation and some basic examples.
+
+This module does not handle SSL encryption (FTPS, HTTPS, etc). For that, you should use the LibCurlSslModule.
+
+You can follow the module progress via the LibCurlModuleChangeLog.
