@@ -1,3 +1,14 @@
 #summary MySQL database driver.
+#labels MySQL
 
 = Introduction =
+
+Allows you to work with [http://www.mysql.com MySQL] databases.
+
+
+You can follow the module progress via the MysqlDatabaseModuleChangeLog.
+
+= Requirements =
+
+  * The DatabaseModule
+  * A MySQL client library
