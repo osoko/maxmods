@@ -1,4 +1,4 @@
-#summary XSLX (Open XML) Spreadsheet file creation.
+#summary XLSX (Open XML) Spreadsheet file creation.
 
 = Introduction =
 
