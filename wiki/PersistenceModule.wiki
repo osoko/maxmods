@@ -1,0 +1,14 @@
+#summary Object Serialization
+
+= Introduction =
+
+Persistence is the ability to retain data structures between program executions, or even between running applications across a network.
+
+This module enables you to persist (or serialize) a BlitzMax Object in such a way that when de-serialized it will be in exactly the same state as it was before serialization.
+
+It stores the objects as XML, which adds the possibility of easily post-processing the data once serialized.
+
+In BaH.Persistence we have a catch-all mentality, which means *everything* is serialized unless you tell it otherwise. This has the advantage of you not having to worry about adding metadata tags to every field of your objects. Instead you can add a `{nopersist}` tag to those fields that you don't want to be serialized.
+
+==Requirements==
+The Peristence module requires the latest LibxmlModule.
