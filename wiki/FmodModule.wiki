@@ -1,0 +1,8 @@
+#summary Music and Sound Effects System.
+#labels FMOD
+
+= Introduction =
+
+FMOD is a widely-used cross-platform audio library, supporting a range of DSP effects, 3D reverb support and geometric occlusion.
+
+The module attempts to cover all the major functionality of FMOD using an intuitive API similar to the C++ one supplied with the library.
