@@ -118,3 +118,8 @@ A tag is a set of curly brackets with some text between them, after your Method 
 If you haven't used them before in BlitzMax, it does look a bit strange. But it *does* compile. ;-)
 
 Now, off you go and get testing!
+
+
+= Building =
+
+See HowToInstallModules to help you get started.
