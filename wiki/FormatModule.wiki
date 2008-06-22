@@ -82,3 +82,8 @@ The Format method formats the text using the given arguments, and returns the St
 Print formatter.format()
 }}}
 To reuse a formatter, you can call the `Clear` method to remove the arguments, allowing you to apply some new ones without the formatting engine having to re-process the format string.
+
+
+= Building =
+
+See HowToInstallModules to help you get started.
