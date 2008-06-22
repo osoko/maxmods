@@ -48,3 +48,8 @@ ctx.Cleanup()
 }}}
 
 Check out the examples provided with the module for more detail.
+
+
+= Building =
+
+See HowToInstallModules to help you get started.
