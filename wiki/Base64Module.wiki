@@ -29,3 +29,8 @@ Local data:Byte[] = TBase64.Decode(encodedData)
 Local decoded:String = String.FromBytes(data, data.length)
 Print "Decoded : " + decoded
 }}}
+
+
+= Building =
+
+See HowToInstallModules to help you get started.
