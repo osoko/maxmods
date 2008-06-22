@@ -14,3 +14,8 @@ As usual, this module is fully cross-platform with extensive documentation and s
 This module does not handle SSL encryption (FTPS, HTTPS, etc). For that, you should use the LibCurlSslModule.
 
 You can follow the module progress via the LibCurlModuleChangeLog.
+
+
+= Building =
+
+See HowToInstallModules to help you get started.
