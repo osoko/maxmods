@@ -32,3 +32,8 @@ If delegate.Install() Then ' install the delegate, so that we can send notificat
 
 End If
 }}}
+
+
+= Building =
+
+See HowToInstallModules to help you get started.
