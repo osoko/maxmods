@@ -9,3 +9,7 @@ It features, continuous collision detection (CCD), contact callbacks, convex pol
 
 The module comes with a suite of interactive examples which highlight many of the features of Box2D, as well as a manual to help you get started.
 
+
+= Building =
+
+See HowToInstallModules to help you get started.
