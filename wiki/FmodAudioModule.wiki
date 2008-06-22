@@ -24,3 +24,8 @@ PlaySound(sound)
 
   * The FmodModule
   * *Note* : Also requires the latest BRL.Audio module, available via SVN from blitzmax.com.
+
+
+= Building =
+
+See HowToInstallModules to help you get started.
