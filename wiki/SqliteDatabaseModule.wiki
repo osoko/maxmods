@@ -13,3 +13,8 @@ You can follow the module progress via the SqliteDatabaseModuleChangeLog.
 = Requirements =
 
   * The DatabaseModule
+
+
+= Building =
+
+See HowToInstallModules to help you get started.
