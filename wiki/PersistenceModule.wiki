@@ -11,4 +11,9 @@ It stores the objects as XML, which adds the possibility of easily post-processi
 In BaH.Persistence we have a catch-all mentality, which means *everything* is serialized unless you tell it otherwise. This has the advantage of you not having to worry about adding metadata tags to every field of your objects. Instead you can add a `{nopersist}` tag to those fields that you don't want to be serialized.
 
 = Requirements =
-  * The LibxmlModule (latest in SVN)
+  * The LibxmlModule
+
+
+= Building =
+
+See HowToInstallModules to help you get started.
