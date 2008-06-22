@@ -7,3 +7,8 @@
 BaH.MAPM provides you with a BlitzMax language-binding to MAPM, enabling you to add support for very large numbers to your applications :-)
 
 Go to the [http://code.google.com/p/maxmods/downloads/list Downloads] Section to get the latest release!
+
+
+= Building =
+
+See HowToInstallModules to help you get started.
