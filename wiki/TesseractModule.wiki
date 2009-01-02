@@ -1,0 +1,32 @@
+#summary Optical Character Recognition
+
+= Introduction =
+An OCR module using the open source [http://code.google.com/p/tesseract-ocr/ Tesseract] OCR engine to process images. The module comes with support for recognising English, German, French, Italian, Dutch and Spanish text.
+
+== Example ==
+Initialise the engine, process an image and display the text.
+{{{
+SuperStrict
+
+Framework BaH.tesseract
+Import BaH.FreeImage
+
+' initialise the engine  '
+Tess.Init("tessdata")
+
+' load an image '
+Local pix:TPixmap = LoadPixmap("phototest.tif")
+
+If pix Then
+
+	' process the image, returning the recognised text  '
+	Local s:String = Tess.Rect(pix)
+
+	Print s
+
+End If
+}}}
+
+= Building =
+
+See HowToInstallModules to help you get started.
