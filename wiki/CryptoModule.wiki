@@ -49,6 +49,7 @@ ctx.Cleanup()
 
 Check out the examples provided with the module for more detail.
 
+You can follow the module progress via the CryptoModuleChangeLog.
 
 = Building =
 
