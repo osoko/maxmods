@@ -1,0 +1,9 @@
+#summary Right-To-Left text formatting
+
+= Introduction =
+
+BaH.RTL enables the correct formatting of Right-To-Left Strings, such as Arabic and Hebrew.
+
+Languages which support RTL require special formatting for different character sequences. By default, BlitzMax is oblivious to these special character sequences, and will simply output the original characters, in order. However,  BaH.RTL will perform this formatting.
+
+Simply call the `FormatStringRTL` function, passing in the string to convert. The correctly formatted RTL string will be returned, which you can use with commands such as `DrawText` to render the text.
