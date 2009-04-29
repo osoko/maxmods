@@ -1,6 +1,13 @@
 #summary Change History for BaH.FreeImage
 
 || *Version* || *Date* || *Comments* ||
+|| 1.05 || 29 Apr 2009 ||  Fixed conversion issue with 4-bit paletted images. ||
+|| || || Fixed GC problems when loading large anim images. ||
+|| || || Fixed problem with creation of new multi-page images. ||
+|| 1.04 || 20 Apr 2008 || Fixed problem with TIFF images not loading if there are more than 1 alpha channel in the image. (fredborg) ||
+|| || || Added GetBitmap(), GetScanLine() and ConvertToRGBF() methods. (fredborg) ||
+|| || || Added GetFormatFromFile(), GetLoadFormats() and GetSaveFormats() helper functions. (fredborg) ||
+|| || || Win32 now compiles as a module, rather than using a DLL :-) ||
 || 1.03 || 22 Dec 2007 || Updated to FreeImage 3.10.0. Adds OpenEXR and OpenJPG(2000) formats. ||
 || || || Win32 now compiles as a module, rather than using a DLL :-) ||
 || || || Fixed colour problems when saving an image. ||
