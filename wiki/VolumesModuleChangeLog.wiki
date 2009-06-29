@@ -1,0 +1,13 @@
+#summary Change History for BaH.Volumes
+
+|| *Version* || *Date* || *Comments* ||
+|| 1.06 || 29 Jun 2009 || Improved unicode support. ||
+|| || || Added custom dir access for Pictures, Movies and Music. ||
+|| || || Added Win32 volume search code. (Artemis) ||
+|| || || Fixed Linux folder localisation (xdg-user-dirs). ||
+|| 1.05 || 18 Apr 2007 || Added GetCustomDir function. Adds support for Mac Shared Folder location. ||
+|| 1.04 || - || Updated Win32 to use SHGetFolderPathW instead of SHGetFolderPathA.  ||
+|| 1.03 || - ||  Added new functions : GetUserHomeDir, GetUserDesktopDir, GetUserAppDir, GetUserDocumentsDir.  ||
+|| 1.02 || - || Added Mac support. ||
+|| 1.01 || - || Fixed win32 type returning the wrong string. ||
+|| 1.00 || -  || Initial Release. ||
