@@ -2,7 +2,7 @@
 
 = Introduction =
 
-A small cross-platform module which provides useful volume/device information support for BlitzMax.
+A small cross-platform module which provides useful volume/device information support for BlitzMax, using a common API.
 
 The module is essentially split into two parts, that of volume information, and some functions which give user-specific directory paths.
 
