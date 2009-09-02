@@ -4,7 +4,9 @@
 
 Do you need to encrypt data in BlitzMax? Then perhaps this is the module for you.
 
-Utilising OpenSSL's crypto libraries, we gain support for BlowFish, CAST, DES, RC2, RC4 and RC5 encryption/decryption, with a simple API that anyone should be able to master in no time.
+Utilising OpenSSL's crypto libraries, we gain support for AES, BlowFish, CAST, DES, RC2, RC4 and RC5 encryption/decryption, with a simple API that anyone should be able to master in no time.
+
+Also included is access to message digest functions, including MD2, MD5, SHA, SHA1, SHA (DSS), SAH1 (DSS), MDC2 (Mac only), and RIPEMD160.
 
 ==Requirements==
 The Crypto module uses an external library (OpenSSL), which needs to be present on the system for it to function correctly.
