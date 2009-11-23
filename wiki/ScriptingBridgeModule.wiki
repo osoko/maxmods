@@ -6,6 +6,8 @@ Scripting Bridge is a framework and a technology that makes it much easier for d
 
 This module gives access to this feature for your BlitzMax applications.
 
+==Requirements==
+The Scripting Bridge framework is available on Mac OS X 10.5 or later.
 
 ==Example==
 Displaying the current track from iTunes :
