@@ -1,5 +1,0 @@
-SuperStrict
-
-Framework BaH.Leptonica
-
-
