@@ -4,6 +4,8 @@
 
 If you need information about network interfaces (eg. ethernet, wifi) attached to your computer, this module can provide it for you via a very simple API.
 
+It retrieves details such as IP Address, Netmask and the hardware MAC Address.
+
 == Example ==
 
 Listing all Interfaces :
