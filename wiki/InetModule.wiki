@@ -11,8 +11,8 @@ Listing all Interfaces :
 SuperStrict
 
 Framework BaH.INet
-Import BRL.Socket ' for DottedIP()
-Import BRL.StandardIO ' for Print
+Import BRL.Socket ' for DottedIP() '
+Import BRL.StandardIO ' for Print '
 
 Local interfaces:TInet[] = GetInetInterfaces()
 
