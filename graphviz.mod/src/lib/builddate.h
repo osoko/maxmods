@@ -1,1 +1,0 @@
-#define BUILDDATE "Tue Jun 12 16:12:17 UTC 2007"
