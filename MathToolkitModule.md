@@ -1,0 +1,24 @@
+# Introduction #
+
+This is a BlitzMax implementation of Boost's Math Toolkit.
+
+The toolkit provides both Statistical Distributions and Mathematical Special Functions.
+
+
+## Statistical Distributions ##
+
+Provides a reasonably comprehensive set of statistical distributions, upon which higher level statistical tests can be built.
+
+The initial focus is on the central univariate distributions. Both continuous (like normal & Fisher) and discrete (like binomial & Poisson) distributions are provided.
+
+## Mathematical Special Functions ##
+
+Provides a small number of high quality special functions, initially these were concentrated on functions used in statistical applications.
+
+The function families currently implemented are the gamma, beta & erf functions along with the incomplete gamma and beta functions (four variants of each) and all the possible inverses of these, plus digamma, various factorial functions, Bessel functions, elliptic integrals, sinus cardinals (along with their hyperbolic variants), inverse hyperbolic functions, Legrendre/Laguerre/Hermite polynomials and various special power and logarithmic functions.
+
+
+
+# Building #
+
+See HowToInstallModules to help you get started.

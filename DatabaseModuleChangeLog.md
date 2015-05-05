@@ -1,0 +1,15 @@
+| **Version** | **Date** | **Comments** |
+|:------------|:---------|:-------------|
+| 1.07 | 7 Mar 2008 | Resets error status before execution of new query. |
+| 1.06 | - | Implementation of Date, DateTime and Time types. |
+| 1.05 | 9 Aug 2007 | Improved object cleanup. |
+| 1.04 | - | Improved getFieldByName efficiency. |
+|  |  | Added TQueryRecord helper methods for type/name retrieval - getXXXByName(). |
+| 1.03 | - | Fixed clearing of lasterror after successful query prepare/execute. |
+| 1.02 | - | Added TDatabaseQuery helper binding functions for set/add values. |
+|  |  | Docs update. |
+| 1.01 | - | Fixed Null exception on re-prepare. |
+|  |  | Added TDatabaseQuery clearBindValues() method. |
+|  |  | Added getter methods to TQueryRecord for String, Int, Long, Float and Double. |
+|  |  | Added hasPrepareSupport() and hasTransactionSupport() methods. |
+| 1.00 | -  | Initial Release. |

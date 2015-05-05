@@ -1,0 +1,29 @@
+# Introduction #
+
+The RegEx module uses [PCRE](http://www.pcre.org) to provide integrated support for Regular Expressions.
+
+Regular expressions allow you to define a pattern for use with Find/Replace, rather than a normal matching string. This makes it infinitely more powerful for complicated matching.
+
+## Example ##
+
+Replace all numbers occurring in the following text with the string "!FLOAT!"
+
+`floats are 4.533, -10.232, 1446.2003 and even 100 If it wasn't enough 5 out of 10 applications said their users preferred them. That's 0.50 !`
+
+With the RegEx module you essentially only need this :
+```
+Local regex:TRegEx = TRegEx.Create("[-+]?[0-9]*\.?[0-9]+")
+
+Local s:String = regex.ReplaceAll(originalString, "!FLOAT!")
+```
+
+which will result in the string
+
+`floats are !FLOAT!, !FLOAT!, !FLOAT! and even !FLOAT! If it wasn't enough !FLOAT! out of !FLOAT! applications said their users preferred them. That's !FLOAT! !`
+
+You can follow the module progress via the RegExModuleChangeLog.
+
+
+# Building #
+
+See HowToInstallModules to help you get started.

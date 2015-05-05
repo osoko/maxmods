@@ -1,0 +1,16 @@
+# Introduction #
+
+[GME](http://www.fly.net/~ant/libs/audio.html) emulates game music in several popular file formats. These include :
+| Format	| System |
+|:-------|:-------|
+| AY	| ZX Spectrum, Amstrad CPC |
+| GBS	| Nintendo Game Boy |
+| GYM	| Sega Genesis, Mega Drive |
+| HES	| NEC TurboGrafx-16, PC Engine |
+| KSS	| MSX Home Computer, other Z80 systems (doesn't support FM sound) |
+| NSF, NSFE	| Nintendo NES, Famicom (with VRC 6, Namco 106, and FME-7 sound) |
+| SAP	| Atari systems using POKEY sound chip |
+| SPC	| Super Nintendo, Super Famicom |
+| VGM, VGZ	| Sega Master System, Mark III, Sega Genesis, Mega Drive, BBC Micro |
+
+The GmeModule requires an additional audio-driver module. There are two currently available : The GmeBassModule, and the GmeOpenalModule.

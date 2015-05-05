@@ -1,0 +1,56 @@
+# Introduction #
+
+Do you need to encrypt data in BlitzMax? Then perhaps this is the module for you.
+
+Utilising OpenSSL's crypto libraries, we gain support for AES, BlowFish, CAST, DES, RC2, RC4 and RC5 encryption/decryption, with a simple API that anyone should be able to master in no time.
+
+Also included is access to message digest functions, including MD2, MD5, SHA, SHA1, SHA (DSS), SAH1 (DSS), MDC2 (Mac only), and RIPEMD160.
+
+## Requirements ##
+The Crypto module uses an external library (OpenSSL), which needs to be present on the system for it to function correctly.
+
+### OS X ###
+Mac OS X comes with both the runtime and dev OpenSSL library files pre-installed. It should simply compile and run without the need for installing anything else.
+
+### Linux ###
+Most Linux distros will have OpenSSL installed, since it is used by a variety of internet applications. You may need to install the openssl-devel package which include headers.
+
+Runtime binaries do not require the devel packages.
+
+### Win32 ###
+You will need to install the Win32 OpenSSL library which include the necessary libeay32.dll. (Note that it should compile without it, as the headers/link files are included with the module)
+
+You can find an installer at [Shining Light Production's](http://www.slproweb.com/products/Win32OpenSSL.html) page, and need only install the **light** version of the library.
+
+If you intend distributing your app without the end-user having to also download OpenSSL, it's possible to include the libeay32.dll (you can find it in System32) in the application folder.
+
+### Example ###
+This short example demonstrates encrypting a set of bytes with the BlowFish algorithm in the Cipher-block chaining mode.
+```
+Local ctx:EVP_CIPHER_CTX = New EVP_CIPHER_CTX.Create()
+
+ctx.EncryptInit(EVP_CIPHER.bf_cbc(), Null, key, iv)
+
+If Not ctx.EncryptUpdate(outbuf, outlen, inbuf, inlen) Then
+
+	Print "Error..."
+	End
+	
+End If
+
+If Not ctx.EncryptFinal(Varptr(outbuf)[outlen], tmplen) Then
+	Print "Error..."
+	End
+End If
+outlen :+ tmplen
+
+ctx.Cleanup()
+```
+
+Check out the examples provided with the module for more detail.
+
+You can follow the module progress via the CryptoModuleChangeLog.
+
+# Building #
+
+See HowToInstallModules to help you get started.

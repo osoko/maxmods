@@ -1,0 +1,12 @@
+# Introduction #
+
+[Sfxr](http://www.drpetter.se/project_sfxr.html) is tool for generating different kinds of sound effects.
+
+BaH.Sfxr provides both a BlitzMax implementation of the classic Sfxr application for the generation of WAV audio files, as well as the ability to create the sound FX audio at runtime. In this way you simply save the settings for each sound and can create them at runtime, rather than store a bunch of audio files with your application.
+
+Go to the [Downloads](http://code.google.com/p/maxmods/downloads/list) Section to get the latest release!
+
+
+# Building #
+
+See HowToInstallModules to help you get started.

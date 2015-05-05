@@ -1,0 +1,123 @@
+# Introduction #
+
+Unit testing is a way to validate that a particular section of code works properly.
+
+The Max Unit module makes it easy to implement your tests with the least possible fuss. The latest version is available from Downloads.
+
+## An Example ##
+Let's go through a quick example to show how this unit testing can work.
+
+First, the code we want to test. Something very simple. A method which performs a calculation.
+```
+SuperStrict
+
+Type TMyController
+
+	' add two numbers and multiply the result by 2 '
+	Method DoCalculation:Int(x:Int, y:Int)
+
+		Return x + y * 2
+	
+	End Method
+
+End Type
+```
+The observant amongst you will notice that the calculation is wrong. As it is intended. We'll write our test to prove it doesn't work, then we can fix the code and see that the test passes.
+```
+SuperStrict
+
+Framework BaH.MaxUnit
+
+Import "controller.bmx" ' the file containing the above Type '
+
+New TTestSuite.run()
+
+Type ControllerTest Extends TTest
+
+	Field controller:TMyController
+
+	Method setup() { before }
+		controller = New TMyController
+	End Method
+
+	Method testDoCalculation() { test }
+	
+		Local result:Int = controller.DoCalculation( 1, 1 )
+		Local expectedResult:Int = 4   '  1 + 1 = 2 * 2 = 4 '
+		
+		assertEqualsI(expectedResult, result)
+	
+	End Method
+
+End Type
+```
+Running this test, results in the following output :
+```
+[0] F
+
+There was 1 failure:
+1) testDoCalculation
+    assertEqualsI() :  expected:<4> but was:<3>
+
+
+FAILURES!!!
+Tests run: 1,  Failures: 1,  Errors: 0
+Time: 0.3
+
+Process complete
+```
+As you expected, the test failed!
+
+Notice how Max Unit provides you with information that might help you track down the bug.
+
+We'll quickly fix the code and run it again.
+
+This is the calculation line as it should be:
+```
+		Return (x + y) * 2
+```
+And the result of running the test now :
+```
+[0] .
+OK (1 test)
+Time: 0.2
+
+Process complete
+```
+Much better!
+The test passes, and we can now sleep well at night.
+
+## Asserting the Truth ##
+Max Unit provides a suite of methods which you use to confirm that a value is actually what you expected it to be. These are called assertions.
+
+A basic assertion is one of truthfulness - `assertTrue(bool:Int, message:String = Null)` - which you pass in a value that you expect to be True, with an optional message that will be output if the assertion fails.
+
+You might also test for equality - `assertEqualsI(expected:Int, actual:Int, message:String = Null)` - where two Ints are compared, with the test failing if they are not equal.
+
+There are "Equals" tests for all standard BlitzMax types (note the suffix "I" for Int on the above example), as well as a general one for Objects (`assertEquals(expected:Object, actual:Object, message:String = Null)`), which will attempt to use the Object's Compare() method to decide if two Objects match.
+
+You can even explicitly `fail(message:String)` a test yourself, if need be.
+
+This flexibility allows you to choose what to test for and when.
+## How It Works ##
+Max Unit uses BlitzMax's new Reflection framework to make writing your tests easier. This allows us to concentrate writing tests than the code that runs them.
+
+The key steps to building a test are
+  * extend your test Type from TTest - Max Unit will automatically run tests for all Types that extend TTest.
+  * tag your methods with {before}, {after}, or {test} - These are metadata tags that tell Max Unit what a particular method does. You can have one before, one after, and as many test methods as you like.
+  * run the TTestSuite, and wait for the results.
+
+A before method is run **before** each test method. An after method is run **after** each test method. These are optional. You can use them for setting up and clearing any data that you use during your test.
+
+A tag is a set of curly brackets with some text between them, after your Method definition. Like this :
+```
+	Method testDoCalculation() { test }
+```
+If you haven't used them before in BlitzMax, it does look a bit strange. But it **does** compile. ;-)
+
+Now, off you go and get testing!
+
+
+# Building #
+
+See HowToInstallModules to help you get started.

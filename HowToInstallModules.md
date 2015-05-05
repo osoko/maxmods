@@ -1,0 +1,22 @@
+# Installation #
+
+BlitzMax uses a hierarchical directory structure which separates modules into related groups (or namespaces).
+
+The main module folder can be found at `BlitzMax/mod`.
+
+The official modules that come with BlitzMax use the namespaces of **BRL** and **Pub**. Each namespace has its own folder, so for example, all modules that begin with `BRL.` will appear under `brl.mod` (and therefore the full path of `BlitzMax/mod/brl.mod`).
+
+Brucey's modules appear under the namespace of **BaH**, and therefore there needs to be a namespace folder called `bah.mod` (the full path being `BlitzMax/mod/bah.mod`).
+
+
+Generally, a packaged module will have the module folder and its contents. This module folder name will look like `chipmunk.mod`, and the folder should be placed into the namespace folder.
+
+Thus, the path to the module **BaH.Chipmunk**, would actually look like this : `BlitzMax/mod/bah.mod/chipmunk.mod`
+
+
+# Building #
+
+Building modules on Windows will require the installation of MinGW. (You can find out more about installing MinGW for BlitzMax [here](http://blitzmax.com/Community/posts.php?topic=72892).)
+For Linux and MacOS X you will need the appropriate developer tools installed.
+
+Otherwise, you build modules simply by choosing the Build Modules option from the IDE.

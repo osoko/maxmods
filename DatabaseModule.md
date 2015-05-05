@@ -1,0 +1,13 @@
+# Introduction #
+
+This is the core of a set of cross-platform modules to allow you to connect
+to a variety of different databases using a standard set of Types and Functions.
+
+Using a standard framework means that you don't have to learn or know anything about the underlying database API, since the framework takes care of all the nitty-gritty for you. This way, you only have to worry about the data and the SQLs to access it.
+
+You can follow the module progress via the DatabaseModuleChangeLog.
+
+
+# Building #
+
+See HowToInstallModules to help you get started.

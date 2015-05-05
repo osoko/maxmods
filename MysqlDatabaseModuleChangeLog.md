@@ -1,0 +1,10 @@
+| **Version** | **Date** | **Comments** |
+|:------------|:---------|:-------------|
+| 1.05 | 7 Mar 2008 | Fixed lastInsertId() issue. |
+|  |  | Win32 now uses local static lib. No copying required! |
+| 1.04 | 11 Apr 2007 | Improved object cleanup. |
+| 1.03 | - | Fixed issue with mis-count of bound parameters. |
+| 1.02 | - | Added TEXT field-type support. |
+|  |  | Added hasPrepareSupport() and hasTransactionSupport() methods. |
+| 1.01 | - | Windows build change. Requires copying of libmysql.a to lib folder! |
+| 1.00 | -  | Initial Release (MySQL 5) |

@@ -1,0 +1,4 @@
+| **Version** | **Date** | **Comments** |
+|:------------|:---------|:-------------|
+| 1.01 | 12 Jan 2009 | Adds Digest functions - MD2, MD5, SHA, SHA1, DSS, DSS1, MDC2 (only Mac), and RIPEMD160 |
+| 1.00 | -  | Initial Release. |

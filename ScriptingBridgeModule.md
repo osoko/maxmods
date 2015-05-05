@@ -1,0 +1,20 @@
+# Introduction #
+
+Scripting Bridge is a framework and a technology that makes it much easier for developers to control and communicate with scriptable applications.
+
+This module gives access to this feature for your BlitzMax applications.
+
+## Requirements ##
+The Scripting Bridge framework is available on Mac OS X 10.5 or later.
+
+## Example ##
+Displaying the current track from iTunes :
+```
+Local iTunes:SBApplication = SBApplication.applicationWithBundleIdentifier("com.apple.iTunes")
+
+Print "Current song is " + itunes.propertyAsObject("currentTrack").propertyAsString("name")
+```
+
+# Building #
+
+See HowToInstallModules to help you get started.

@@ -1,0 +1,10 @@
+# Introduction #
+
+This is a modified version of BRL.AppStub, made specifically to allow the compilation of [wxMax](http://wxmax.googlecode.com) applications on OS X.
+
+The official module uses Cocoa-specific code and a custom application Menu, which has problems with wxWidgets, since it is Carbon-based and creates its own application Menu.
+
+
+# Building #
+
+See HowToInstallModules to help you get started.

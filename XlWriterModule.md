@@ -1,0 +1,28 @@
+# Introduction #
+
+Open XML is an XML-based file format specification for electronic documents such as spreadsheets, charts, presentations and word processing documents.
+
+This BlitzMax module enables the creation of spreadsheets in the Open XML format, which can then be opened in various spreadsheet applications (which include, Numbers on MacOS, Excel 2007, and Open Office).
+
+The module is designed to be fairly intuitive, and easy to use.
+
+## Example ##
+
+```
+Local doc:TXLDocument = New TXLDocument.Create()
+		
+Local sheet:TXLWorksheet = doc.Workbook().AddWorksheet("MySheet")
+
+sheet.Cell(1, 1).SetValue(100)
+sheet.Cell(2, 1).SetValue(50)
+
+sheet.Cell(3, 1).SetFormula("A1 + A2")
+
+doc.Save("Addition")
+```
+
+# Requirements #
+
+  * The RegExModule
+  * The LibxmlModule (latest in SVN)
+  * [wxMax](http://wxmax.googlecode.com/) (latest in SVN)

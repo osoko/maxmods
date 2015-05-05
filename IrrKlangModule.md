@@ -1,0 +1,5 @@
+# Introduction #
+
+[irrKlang](http://www.ambiera.com/irrklang/) is a cross platform audio library designed to be used in games, scientific simulations and similar.
+
+This BlitzMax module gives you complete access to irrKlang's API, and with the help of the IrrKlangAudioModule, you can use it as a standard BlitzMax Audio driver.

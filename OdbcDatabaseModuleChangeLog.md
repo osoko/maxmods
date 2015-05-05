@@ -1,0 +1,8 @@
+| **Version** | **Date** | **Comments** |
+|:------------|:---------|:-------------|
+| 1.04 | 7 Mar 2008 | Implemented Date, DateTime and Time types. |
+| 1.03 | 11 Apr 2007 | Fixed issue with mis-count of bound parameters. |
+| 1.02 | - | Added hasPrepareSupport() and hasTransactionSupport() methods. |
+| 1.01 | - | Fixed MacOS SQLSMALLINT/int cast issues. |
+| 1.00 | - | Initial Release |
+|  |  | Includes iODBC 3.52.5 source for Linux/MacOS module. |

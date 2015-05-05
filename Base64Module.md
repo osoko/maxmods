@@ -1,0 +1,33 @@
+# Introduction #
+
+Based on [Robert Harder's](http://iharder.sourceforge.net/current/java/base64/) Java encoder/decoder.
+
+Allows you to Base64 encode byte data to a String, and decode from an encoded String to byte data.
+
+Handy if you need to embed some binary data in plain-text.
+
+### Example ###
+Encoding
+```
+SuperStrict
+Import BaH.Base64
+
+Local someData:String = "Woo! BlitzMax Modules rock!"
+Local encoded:String = TBase64.Encode(someData, someData.length)
+Print "Encoded : " + encoded
+```
+Decoding
+```
+SuperStrict
+Import BaH.Base64
+
+Local encodedData:String = "V29vISBCbGl0ek1heCBNb2R1bGVzIHJvY2sh"
+Local data:Byte[] = TBase64.Decode(encodedData)
+Local decoded:String = String.FromBytes(data, data.length)
+Print "Decoded : " + decoded
+```
+
+
+# Building #
+
+See HowToInstallModules to help you get started.

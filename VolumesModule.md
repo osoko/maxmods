@@ -1,0 +1,46 @@
+# Introduction #
+
+A small cross-platform module which provides useful volume/device information support for BlitzMax, using a common API.
+
+The module is essentially split into two parts, that of volume information, and some functions which give user-specific directory paths.
+
+
+## Example ##
+
+Listing all volumes :
+```
+SuperStrict
+
+Framework bah.volumes
+Import brl.standardio
+
+Local list:TList = ListVolumes()
+
+If list Then
+	Print "Volumes :"
+
+	For Local v:TVolume = EachIn list
+	
+		Print "~t" + v.volumeName + "  -  " + v.volumeDevice + " (" +  v.volumeType +  ") -  " + ..
+			((v.volumeFree / 1024) / 1024) + "mb"
+	
+	Next
+End If
+```
+
+Retrieving the  user's Desktop folder :
+```
+SuperStrict
+
+Framework BaH.Volumes
+Import BRL.Standardio
+
+Print GetUserDesktopDir()
+```
+
+
+You can follow the module progress via the VolumesModuleChangeLog.
+
+# Building #
+
+See HowToInstallModules to help you get started.

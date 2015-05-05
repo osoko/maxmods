@@ -1,0 +1,23 @@
+# Introduction #
+
+Allows you to use the IrrKlangModule as a BlitzMax Audio driver.
+
+By importing BaH.irrKlangAudio, you can specify `irrKlang` as an audio driver, and use the standard audio commands to play sounds.
+
+
+## Example ##
+
+```
+Import BaH.irrKlangAudio
+
+SetAudioDriver("irrKlang")
+
+Local sound:TSound = LoadSound("track01.ogg", SOUND_LOOP)
+
+PlaySound(sound)
+```
+
+# Requirements #
+
+  * The IrrKlangModule
+  * **Note** : Also requires the latest BRL.Audio module, available via SVN from blitzmax.com.
